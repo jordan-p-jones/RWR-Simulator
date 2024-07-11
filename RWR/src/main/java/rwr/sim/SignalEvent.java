@@ -23,101 +23,101 @@ import jakarta.persistence.TemporalType;
 @Table(name = "SIGNAL_EVENT")
 public class SignalEvent
 {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "SIGNAL_EVENT_ID")
-	private long id;
-	
-	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-	@JoinColumn(name = "SIGNAL_ID")
-	private Signal signal;
-	
-	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-	@JoinColumn(name = "RWR_CONTACT_ID")
-	private RwrContact rwrContact;
-	
-	@Temporal(TemporalType.TIMESTAMP)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "SIGNAL_EVENT_ID")
+    private long id;
+    
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "SIGNAL_ID")
+    private Signal signal;
+    
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "RWR_CONTACT_ID")
+    private RwrContact rwrContact;
+    
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "DETECTION_TIME")
-	private Date detectionTime;
+    private Date detectionTime;
 
-	/**
-	 * Get the id.
-	 *
-	 * @return the id
-	 */
-	public long getId()
-	{
-		return id;
-	}
+    /**
+     * Get the id.
+     *
+     * @return the id
+     */
+    public long getId()
+    {
+        return id;
+    }
 
-	/**
-	 * Set the id.
-	 *
-	 * @param id the id to set
-	 */
-	public void setId( long id )
-	{
-		this.id = id;
-	}
+    /**
+     * Set the id.
+     *
+     * @param id the id to set
+     */
+    public void setId( long id )
+    {
+        this.id = id;
+    }
 
-	/**
-	 * Get the signal.
-	 *
-	 * @return the signal
-	 */
-	public Signal getSignal()
-	{
-		return signal;
-	}
+    /**
+     * Get the signal.
+     *
+     * @return the signal
+     */
+    public Signal getSignal()
+    {
+        return signal;
+    }
 
-	/**
-	 * Set the signal.
-	 *
-	 * @param signal the signal to set
-	 */
-	public void setSignal( Signal signal )
-	{
-		this.signal = signal;
-	}
+    /**
+     * Set the signal.
+     *
+     * @param signal the signal to set
+     */
+    public void setSignal( Signal signal )
+    {
+        this.signal = signal;
+    }
 
-	/**
-	 * Get the rwrContact.
-	 *
-	 * @return the rwrContact
-	 */
-	public RwrContact getRwrContact()
-	{
-		return rwrContact;
-	}
+    /**
+     * Get the rwrContact.
+     *
+     * @return the rwrContact
+     */
+    public RwrContact getRwrContact()
+    {
+        return rwrContact;
+    }
 
-	/**
-	 * Set the rwrContact.
-	 *
-	 * @param rwrContact the rwrContact to set
-	 */
-	public void setRwrContact( RwrContact rwrContact )
-	{
-		this.rwrContact = rwrContact;
-	}
+    /**
+     * Set the rwrContact.
+     *
+     * @param rwrContact the rwrContact to set
+     */
+    public void setRwrContact( RwrContact rwrContact )
+    {
+        this.rwrContact = rwrContact;
+    }
 
-	/**
-	 * Get the detectionTime.
-	 *
-	 * @return the detectionTime
-	 */
-	public Date getDetectionTime()
-	{
-		return detectionTime;
-	}
+    /**
+     * Get the detectionTime.
+     *
+     * @return the detectionTime
+     */
+    public Date getDetectionTime()
+    {
+        return detectionTime;
+    }
 
-	/**
-	 * Set the detectionTime.
-	 *
-	 * @param detectionTime the detectionTime to set
-	 */
-	public void setDetectionTime( Date detectionTime )
-	{
-		this.detectionTime = detectionTime;
-	}
-	
+    /**
+     * Set the detectionTime.
+     *
+     * @param detectionTime the detectionTime to set
+     */
+    public void setDetectionTime( Date detectionTime )
+    {
+        this.detectionTime = detectionTime;
+    }
+    
 }

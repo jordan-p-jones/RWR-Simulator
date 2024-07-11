@@ -6,19 +6,19 @@ package rwr.sim;
  */
 public enum Threat
 {
-	LOW("LOW"),
-	HIGH("HGH"),
-	LOCK("LCK"),
-	LAUNCH("LCH");
-	
-	private final String code;
-	
-	private Threat( final String code )
-	{
-		this.code = code;
-	}
-	
-	/**
+    LOW("LOW"),
+    HIGH("HGH"),
+    LOCK("LCK"),
+    LAUNCH("LCH");
+    
+    private final String code;
+    
+    private Threat( final String code )
+    {
+        this.code = code;
+    }
+    
+    /**
      * Simple Getter for code property.
      *
      * @return the code
