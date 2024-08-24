@@ -6,4 +6,4 @@ The idea is that say you have some real-time system capable of receiving message
 Below is a short loop of what the application looks like with 11 seconds of simulated signal data:
 ![](https://github.com/jordan-p-jones/RWR-Simulator/blob/main/RwrAppDemo.gif)
 
-Note that running this application requires manually starting a RabbitMQ service on your local machine prior to running the application, as well as having a Postgres database already existing (although Hibernate will create the tables when the program runs for the first time). An alternative method would be to create a container with Docker that is configured to use RabbitMQ.
+Note that running this application requires manually starting a RabbitMQ service on your local machine prior to running the application, as well as having a Postgres database already existing (although Hibernate will create the tables when the program runs for the first time). An alternative method is to create a container with Docker that is configured to use RabbitMQ.
